@@ -1,0 +1,8 @@
+{
+  "name": "qaapp",
+  "app_id": "562db031",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

@@ -1,0 +1,34 @@
+
+<!-- <ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Mapa</ion-title>
+  </ion-navbar>
+
+</ion-header> -->
+
+
+<ion-content>
+
+    <h1>{{ title }}</h1>
+    
+    <!-- this creates a google map on the page with the given lat/lng from -->
+    <!-- the component as the initial center of the map: -->
+    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="15">
+      <agm-marker 
+      [latitude]="lat" 
+      [longitude]="lng"></agm-marker>
+    </agm-map>
+
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar color="primary">
+        <ion-buttons end>
+            <button (click)="cerrarModal()" ion-button>
+              <!-- <ion-icon name="search"></ion-icon> -->
+              Cerrar
+            </button>
+          </ion-buttons>
+    </ion-toolbar>
+  </ion-footer>
